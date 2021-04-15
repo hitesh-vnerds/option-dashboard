@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="author" content="PIXINVENT">
+    <title></title>
+    <link rel="shortcut icon" type="image/x-icon" href="#">
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/charts/apexcharts.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/core/colors/palette-gradient.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/dashboard-ecommerce.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/card-analytics.css">
+    <!-- END: Page CSS-->
+
+    <!--data tabal-->
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/datatables.min.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/vendors/css/tables/datatable/extensions/dataTables.checkboxes.css">
+     <link rel="stylesheet" type="text/css" href="../app-assets/css/plugins/file-uploaders/dropzone.css">
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/components.css">
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css"/>
+    <link rel="stylesheet" type="text/css" href="../app-assets/css/pages/data-list-view.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern 2-columns  navbar-floating footer-static   menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+
+   <!-- BEGIN: Header-->
+      <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu floating-nav navbar-light navbar-shadow">
+         <div class="navbar-wrapper">
+            <div class="container">
+            <div class="navbar-container content">
+               <div class="navbar-collapse" id="navbar-mobile">
+                  <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                     <ul class="nav navbar-nav">
+                        <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ficon feather icon-menu"></i></a></li>
+                     </ul>
+                      <a class="navbar-brand" href="#">
+                        Mercato
+                     </a>
+                  </div>
+                  <ul class="nav navbar-nav float-right">
+                     <li class="dropdown dropdown-notification nav-item">
+                        <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon feather icon-bell"></i><span class="badge badge-pill badge-primary badge-up">5</span></a>
+                        <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                           <li class="dropdown-menu-header">
+                              <div class="dropdown-header m-0 p-2">
+                                 <h3 class="white">5 New</h3>
+                                 <span class="notification-title">App Notifications</span>
+                              </div>
+                           </li>
+                           <li class="scrollable-container media-list">
+                              <a class="d-flex justify-content-between" href="javascript:void(0)">
+                                 <div class="media d-flex align-items-start">
+                                    <div class="media-left"><i class="feather icon-plus-square font-medium-5 primary"></i></div>
+                                    <div class="media-body">
+                                       <h6 class="primary media-heading">You have new order!</h6>
+                                       <small class="notification-text"> Are your going to meet me tonight?</small>
+                                    </div>
+                                    <small>
+                                    <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">9 hours ago</time></small>
+                                 </div>
+                              </a>
+                              <a class="d-flex justify-content-between" href="javascript:void(0)">
+                                 <div class="media d-flex align-items-start">
+                                    <div class="media-left"><i class="feather icon-download-cloud font-medium-5 success"></i></div>
+                                    <div class="media-body">
+                                       <h6 class="success media-heading red darken-1">99% Server load</h6>
+                                       <small class="notification-text">You got new order of goods.</small>
+                                    </div>
+                                    <small>
+                                    <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">5 hour ago</time></small>
+                                 </div>
+                              </a>
+                              <a class="d-flex justify-content-between" href="javascript:void(0)">
+                                 <div class="media d-flex align-items-start">
+                                    <div class="media-left"><i class="feather icon-alert-triangle font-medium-5 danger"></i></div>
+                                    <div class="media-body">
+                                       <h6 class="danger media-heading yellow darken-3">Warning notifixation</h6>
+                                       <small class="notification-text">Server have 99% CPU usage.</small>
+                                    </div>
+                                    <small>
+                                    <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                 </div>
+                              </a>
+                              <a class="d-flex justify-content-between" href="javascript:void(0)">
+                                 <div class="media d-flex align-items-start">
+                                    <div class="media-left"><i class="feather icon-check-circle font-medium-5 info"></i></div>
+                                    <div class="media-body">
+                                       <h6 class="info media-heading">Complete the task</h6>
+                                       <small class="notification-text">Cake sesame snaps cupcake</small>
+                                    </div>
+                                    <small>
+                                    <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">Last week</time></small>
+                                 </div>
+                              </a>
+                              <a class="d-flex justify-content-between" href="javascript:void(0)">
+                                 <div class="media d-flex align-items-start">
+                                    <div class="media-left"><i class="feather icon-file font-medium-5 warning"></i></div>
+                                    <div class="media-body">
+                                       <h6 class="warning media-heading">Generate monthly report</h6>
+                                       <small class="notification-text">Chocolate cake oat cake tiramisu marzipan</small>
+                                    </div>
+                                    <small>
+                                    <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">Last month</time></small>
+                                 </div>
+                              </a>
+                           </li>
+                           <li class="dropdown-menu-footer"><a class="dropdown-item p-1 text-center" href="javascript:void(0)">View all notifications</a></li>
+                        </ul>
+                     </li>
+                     <li class="dropdown dropdown-notification nav-item">
+                        <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon feather icon-mail"></i><span class="badge badge-pill badge-primary badge-up">5</span></a>
+                        <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
+                           <li class="dropdown-menu-header">
+                              <div class="dropdown-header m-0 p-2">
+                                 <h3 class="white">5 New</h3>
+                                 <span class="notification-title">App Notifications</span>
+                              </div>
+                           </li>
+                           <li class="scrollable-container media-list">
+                              <a class="d-flex justify-content-between" href="javascript:void(0)">
+                                 <div class="media d-flex align-items-start">
+                                    <div class="media-left"><i class="feather icon-plus-square font-medium-5 primary"></i></div>
+                                    <div class="media-body">
+                                       <h6 class="primary media-heading">You have new order!</h6>
+                                       <small class="notification-text"> Are your going to meet me tonight?</small>
+                                    </div>
+                                    <small>
+                                    <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">9 hours ago</time></small>
+                                 </div>
+                              </a>
+                              <a class="d-flex justify-content-between" href="javascript:void(0)">
+                                 <div class="media d-flex align-items-start">
+                                    <div class="media-left"><i class="feather icon-download-cloud font-medium-5 success"></i></div>
+                                    <div class="media-body">
+                                       <h6 class="success media-heading red darken-1">99% Server load</h6>
+                                       <small class="notification-text">You got new order of goods.</small>
+                                    </div>
+                                    <small>
+                                    <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">5 hour ago</time></small>
+                                 </div>
+                              </a>
+                              <a class="d-flex justify-content-between" href="javascript:void(0)">
+                                 <div class="media d-flex align-items-start">
+                                    <div class="media-left"><i class="feather icon-alert-triangle font-medium-5 danger"></i></div>
+                                    <div class="media-body">
+                                       <h6 class="danger media-heading yellow darken-3">Warning notifixation</h6>
+                                       <small class="notification-text">Server have 99% CPU usage.</small>
+                                    </div>
+                                    <small>
+                                    <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
+                                 </div>
+                              </a>
+                              <a class="d-flex justify-content-between" href="javascript:void(0)">
+                                 <div class="media d-flex align-items-start">
+                                    <div class="media-left"><i class="feather icon-check-circle font-medium-5 info"></i></div>
+                                    <div class="media-body">
+                                       <h6 class="info media-heading">Complete the task</h6>
+                                       <small class="notification-text">Cake sesame snaps cupcake</small>
+                                    </div>
+                                    <small>
+                                    <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">Last week</time></small>
+                                 </div>
+                              </a>
+                              <a class="d-flex justify-content-between" href="javascript:void(0)">
+                                 <div class="media d-flex align-items-start">
+                                    <div class="media-left"><i class="feather icon-file font-medium-5 warning"></i></div>
+                                    <div class="media-body">
+                                       <h6 class="warning media-heading">Generate monthly report</h6>
+                                       <small class="notification-text">Chocolate cake oat cake tiramisu marzipan</small>
+                                    </div>
+                                    <small>
+                                    <time class="media-meta" datetime="2015-06-11T18:29:20+08:00">Last month</time></small>
+                                 </div>
+                              </a>
+                           </li>
+                           <li class="dropdown-menu-footer"><a class="dropdown-item p-1 text-center" href="javascript:void(0)">View all notifications</a></li>
+                        </ul>
+                     </li>
+                     <li class="dropdown dropdown-user nav-item">
+                        <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                           <div class="user-nav d-sm-flex d-none"><span class="user-name text-bold-600">John Doe</span><span class="user-status">Available</span></div>
+                           <span><img class="round" src="../app-assets/images/portrait/small/avatar-s-11.jpg" alt="avatar" height="40" width="40"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                           <a class="dropdown-item" href="page-user-profile.html"><i class="feather icon-user"></i> Edit Profile</a><a class="dropdown-item" href="app-email.html"><i class="feather icon-mail"></i> My Inbox</a><a class="dropdown-item" href="app-todo.html"><i class="feather icon-check-square"></i> Task</a><a class="dropdown-item" href="app-chat.html"><i class="feather icon-message-square"></i> Chats</a>
+                           <div class="dropdown-divider"></div>
+                           <a class="dropdown-item" href="auth-login.html"><i class="feather icon-power"></i> Logout</a>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            </div>
+         </div>
+      </nav>
+      <!-- END: Header-->
+      <!-- BEGIN: Main Menu-->
+      <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+         <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+               <li class="nav-item mr-auto">
+                    <a class="navbar-brand" href="../html/ltr/vertical-collapsed-menu-template/index.html">
+                     <div class="brand-text">
+                        <div class="brand-img">
+                           <img src="../app-assets/images/portrait/small/avatar-s-11.jpg">
+                        </div>
+                        <h2 class="mb-0">Tristin Leannon<span>Admin</span></h2>
+
+                     </div>
+                    </a>
+                </li>
+            </ul>
+         </div>
+         <div class="shadow-bottom"></div>
+         <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+               <li class="nav-item active"><a href="dashboard.html"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="Email">Dashboard</span></a>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper">
+            <div class="content-header row">
+            </div>
+            <div class="content-body">
+                <!-- Dashboard Ecommerce Starts -->
+                <section id="dashboard-ecommerce">
+                   <div class="row">
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <div class="card-header d-flex align-items-start pb-0 justify-content-start">
+                                     <div class="avatar bg-rgba-primary p-50 m-0">
+                                        <div class="avatar-content">
+                                            <i class="feather icon-user text-primary font-medium-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ds-card-content">
+                                        <h2 class="text-bold-300 mb-0">54,210</h2>
+                                        <div class="d-flex justify-content-between">
+                                         <p class="mb-0">Registered User</p>
+                                          <div class="card-select">
+                                           By
+                                             <select>
+                                                 <option>Month</option>
+                                                 <option>Day</option>
+                                                 <option>week</option>
+                                             </select>
+                                            </div>
+                                         </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <div class="card-header d-flex align-items-start pb-0 justify-content-start">
+                                     <div class="avatar bg-rgba-primary p-50 m-0">
+                                        <div class="avatar-content">
+                                            <i class="feather icon-cpu text-primary font-medium-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ds-card-content">
+                                        <h2 class="text-bold-300 mb-0">6,183</h2>
+                                        <div class="d-flex justify-content-between">
+                                         <p>Live Bids</p>
+                                          <div class="card-select">
+                                           By
+                                             <select>
+                                                <option>Month</option>
+                                                 <option>Day</option>
+                                                 <option>week</option>
+                                             </select>
+                                            </div>
+                                         </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="card">
+                                <div class="card-header d-flex align-items-start pb-0 justify-content-start">
+                                     <div class="avatar bg-rgba-primary p-50 m-0">
+                                        <div class="avatar-content">
+                                            <i class="feather icon-file-text text-primary font-medium-5"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ds-card-content">
+                                        <h2 class="text-bold-300 mb-0">45,217</h2>
+                                        <div class="d-flex justify-content-between">
+                                         <p>Completed Bids</p>
+                                          <div class="card-select">
+                                           By
+                                             <select>
+                                                 <option>Month</option>
+                                                 <option>Day</option>
+                                                 <option>week</option>
+                                             </select>
+                                            </div>
+                                         </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-8 col-md-7 col-12">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-between align-items-end">
+                                    <h4 class="card-title">Revenue</h4>
+                                    <p class="font-medium-5 mb-0"><i class="feather icon-settings text-muted cursor-pointer"></i></p>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-body pb-0">
+                                        <div class="d-flex justify-content-start">
+                                            <div class="mr-2">
+                                                <h2 class="text-bold-400">
+                                                  <span class="text-success">AED 100,000</span>
+                                                </h2>
+                                            </div>
+                                         </div>
+                                         <div id="line-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-5 col-12 hm-trending">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Trending Categories</h4>
+                                </div>
+                                <div class="card-content">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between  py-1">
+                                            <div class="browser-info">
+                                               
+                                                <p> <span class="mr-1">1</span> Art & Crafts</p>
+                                           </div>
+                                            <div class="stastics-info text-right">
+                                                <span>800</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between  py-1">
+                                            <div class="browser-info">
+                                               
+                                                <p> <span class="mr-1">2</span>Automotive</p>
+                                           </div>
+                                            <div class="stastics-info text-right">
+                                                <span>800</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between  py-1">
+                                            <div class="browser-info">
+                                               
+                                                <p> <span class="mr-1">3</span> Collectibles</p>
+                                           </div>
+                                            <div class="stastics-info text-right">
+                                                <span>800</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between  py-1">
+                                            <div class="browser-info">
+                                               
+                                                <p> <span class="mr-1">4</span> Community</p>
+                                           </div>
+                                            <div class="stastics-info text-right">
+                                                <span>800</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between  py-1">
+                                            <div class="browser-info">
+                                               
+                                                <p> <span class="mr-1">5</span> Electronics</p>
+                                           </div>
+                                            <div class="stastics-info text-right">
+                                                <span>800</span>
+                                            </div>
+                                        </div>
+                                        
+                                          <div class="d-flex justify-content-between  py-1">
+                                            <div class="browser-info">
+                                               
+                                                <p> <span class="mr-1">6</span> Fashion</p>
+                                           </div>
+                                            <div class="stastics-info text-right">
+                                                <span>800</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between  py-1">
+                                            <div class="browser-info">
+                                               
+                                                <p> <span class="mr-1">7</span>Health & Beauty</p>
+                                           </div>
+                                            <div class="stastics-info text-right">
+                                                <span>800</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-12">
+                          <div class="d-flex justify-content-between align-items-end mt-3">
+                                    <h4 class="card-title">Clipboard</h4>
+                                     <p> <a href="#">View All <i class="feather icon-chevron-right"></i></a></p>
+                                </div>
+                        </div>
+
+                        <div class="col-sm-12 col-12">
+                            <div class="table-responsive">
+                        <table class="table data-list-view data-list">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Category</th>
+                                    <th>Time Left</th>
+                                    <th>Start Bid Price</th>
+                                    <th>Total Bids</th>
+                                    <th>Current Bids</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   <td class="product-name">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <div class="avatar mr-50">
+                                                <img src="../app-assets/images/portrait/small/avatar-s-8.jpg" alt="Avatar" height="30" width="30">
+                                            </div>
+                                            <div class="user-page-info">
+                                                <h6 class="mb-0">Apple iPhone X - 64GB - Space Gray <br>(Verizon) A1865</h6>
+                                            
+                                            </div>
+                                           
+                                        </div>
+                                    </td>
+                                    <td class="product-category">Electronics</td>
+                                    <td>
+                                       02:30 mins
+                                    </td>
+                                    <td>
+                                       2,325
+                                    </td>
+                                    <td>24</td>
+                                    <td>
+                                       2,451.25
+                                    </td>
+                                </tr>
+                                <tr>
+                                   <td class="product-name">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <div class="avatar mr-50">
+                                                <img src="../app-assets/images/portrait/small/avatar-s-8.jpg" alt="Avatar" height="30" width="30">
+                                            </div>
+                                            <div class="user-page-info">
+                                                <h6 class="mb-0">Apple iPhone X - 64GB - Space Gray <br>(Verizon) A1865</h6>
+                                            
+                                            </div>
+                                           
+                                        </div>
+                                    </td>
+                                    <td class="product-category">Electronics</td>
+                                    <td>
+                                       02:30 mins
+                                    </td>
+                                    <td>
+                                       2,325
+                                    </td>
+                                    <td>24</td>
+                                    <td>
+                                       2,451.25
+                                    </td>
+                                </tr>
+                                <tr>
+                                   <td class="product-name">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <div class="avatar mr-50">
+                                                <img src="../app-assets/images/portrait/small/avatar-s-8.jpg" alt="Avatar" height="30" width="30">
+                                            </div>
+                                            <div class="user-page-info">
+                                                <h6 class="mb-0">Apple iPhone X - 64GB - Space Gray <br>(Verizon) A1865</h6>
+                                            
+                                            </div>
+                                           
+                                        </div>
+                                    </td>
+                                    <td class="product-category">Electronics</td>
+                                    <td>
+                                       02:30 mins
+                                    </td>
+                                    <td>
+                                       2,325
+                                    </td>
+                                    <td>24</td>
+                                    <td>
+                                       2,451.25
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                   <td class="product-name">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <div class="avatar mr-50">
+                                                <img src="../app-assets/images/portrait/small/avatar-s-8.jpg" alt="Avatar" height="30" width="30">
+                                            </div>
+                                            <div class="user-page-info">
+                                                <h6 class="mb-0">Apple iPhone X - 64GB - Space Gray <br>(Verizon) A1865</h6>
+                                            
+                                            </div>
+                                           
+                                        </div>
+                                    </td>
+                                    <td class="product-category">Electronics</td>
+                                    <td>
+                                       02:30 mins
+                                    </td>
+                                    <td>
+                                       2,325
+                                    </td>
+                                    <td>24</td>
+                                    <td>
+                                       2,451.25
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                <!-- Dashboard Ecommerce ends -->
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+   
+    <!-- END: Footer-->
+    <footer class="footer footer-static footer-light py-2">
+       
+    </footer>
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../app-assets/vendors/js/charts/apexcharts.min.js"></script>
+    <script src="../app-assets/vendors/js/extensions/dropzone.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/dataTables.select.min.js"></script>
+    <script src="../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <!-- END: Page Vendor JS-->
+  
+    <!-- BEGIN: Theme JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+    <script src="../app-assets/js/core/app-menu.js"></script>
+    <script src="../app-assets/js/core/app.js"></script>
+
+    <script src="../app-assets/js/scripts/components.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+   
+    <script src="../assets/js/scripts.js"></script>
+    <!-- END: Page JS-->
+
+</body>
+<!-- END: Body-->
+
+</html>
